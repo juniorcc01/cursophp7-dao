@@ -25,10 +25,19 @@ $usuario->login("user","123456");
 echo $usuario;
 */
 
+/*
+insert de usuarios
 $aluno = new Usuario("Dimla","Lula2018");
-
 $aluno->insert();
-
 echo $aluno;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadbyId(8);
+echo($usuario);
+$usuario->update("LULINHA","lula2018");
+
+echo $usuario;
 
 ?>
